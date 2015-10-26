@@ -1,38 +1,42 @@
 # Cache and logs (Symfony2)
-/app/cache/*
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
+**/app/cache/*
+**/app/logs/*
+!**/app/cache/.gitkeep
+!**/app/logs/.gitkeep
 
 # Cache and logs (Symfony3)
-/var/cache/*
-/var/logs/*
-!var/cache/.gitkeep
-!var/logs/.gitkeep
+**/var/cache/*
+**/var/logs/*
+!**/var/cache/.gitkeep
+!**/var/logs/.gitkeep
 
 # Parameters
-/app/config/parameters.yml
-/app/config/parameters.ini
+**/app/config/parameters.yml
+**/app/config/parameters.ini
 
 # Managed by Composer
-/app/bootstrap.php.cache
-/var/bootstrap.php.cache
-/bin/*
-!bin/console
-!bin/symfony_requirements
-/vendor/
-composer.lock
+**/app/bootstrap.php.cache
+**/var/bootstrap.php.cache
+**/bin/*
+!**/bin/console
+!**/bin/symfony_requirements
+**/vendor/
+**/composer.lock
 
 # Assets and user uploads
-/web/bundles/
-/web/uploads/
+**/web/bundles/
+**/web/uploads/
 
 # PHPUnit
-/app/phpunit.xml
-/phpunit.xml
+**/app/phpunit.xml
+**/phpunit.xml
 
 # Build data
-/build/
+**/build/
 
 # Composer PHAR
-/composer.phar
+**/composer.phar
+
+# nginx logs
+**/nginx/logs
+!**/nginx/logs/.gitignore
