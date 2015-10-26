@@ -38,5 +38,5 @@
 **/composer.phar
 
 # nginx logs
-**/nginx/logs
+**/nginx/logs/*
 !**/nginx/logs/.gitignore
