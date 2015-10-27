@@ -1,3 +1,4 @@
 <?php 
 
-echo "OI!";exit;
+phpinfo();
+exit;

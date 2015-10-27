@@ -2,13 +2,15 @@ nginx:
   image: nginx:1.9.5
   ports:
     - "80:80"
+    - "443:443"
   links:
     - php55
     - memcached
   extra_hosts:
     - "local.appsymfony.com:127.0.0.1"
   volumes:
-    - ./app:/usr/share/nginx/html
+    # - ./app:/usr/share/nginx/html/app
+    - ./app:/var/www/html
     - ./nginx/conf.d/app.conf:/etc/nginx/conf.d/default.conf
     - ./nginx/logs:/var/log/nginx
 memcached:
