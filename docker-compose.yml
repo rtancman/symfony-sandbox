@@ -16,6 +16,8 @@ memcached:
   image:  memcached
 php55:
   image:  rtancman/docker-symfony
+  links:
+    - memcached
   ports:
     - "9000:9000"
   volumes:
