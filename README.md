@@ -1,4 +1,4 @@
-# symfony-sandboxe
+# symfony-sandbox
 
 Symfony for fun ;)
 
